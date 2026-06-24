@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "repo": "elijah286/LabVIEW-CI-Test9",
+  "sha": "334f50458087f2ea3edf1af78b1b16263d4e8094",
+  "revisions": [
+    {
+      "sha": "334f50458087f2ea3edf1af78b1b16263d4e8094",
+      "short": "334f504",
+      "message": "Add LabVIEW CI pipeline",
+      "author": "Elijah Kerry",
+      "date": "2026-06-24T12:21:37Z"
+    },
+    {
+      "sha": "4e94a92326c61d1c618eae56550b94ac96b09580",
+      "short": "4e94a92",
+      "message": "added code",
+      "author": "Elijah Kerry",
+      "date": "2026-06-24T12:19:02Z"
+    }
+  ],
+  "config": {
+    "use": "",
+    "actions": {},
+    "vipc": []
+  },
+  "vipc": [
+    {
+      "path": ".github/labview/vipm/ci-tooling.vipc",
+      "role": "core",
+      "capability": "",
+      "configured": true,
+      "packages": [
+        "dataflow_g_lib_g_image-0.5.0.1",
+        "jki_lib_caraya-1.4.4.148",
+        "jki_vi_tester",
+        "ni_lib_junit_results_api-1.0.1.6",
+        "ni_lib_utf_junit_report-1.0.1.43"
+      ],
+      "error": ""
+    },
+    {
+      "path": "COTC Dependencies.vipc",
+      "role": "project",
+      "capability": "",
+      "configured": true,
+      "packages": [
+        "dataflow_g_lib_g_image-0.5.0.1",
+        "oglib_appcontrol-4.1.0.7",
+        "oglib_array-4.1.0.13",
+        "oglib_error-4.2.0.23",
+        "oglib_file-4.0.0.20",
+        "oglib_lvdata-4.2.0.21",
+        "oglib_string-4.1.0.12"
+      ],
+      "error": ""
+    }
+  ],
+  "nipm": [
+    {
+      "name": "LabVIEW",
+      "source": "NI Package Manager",
+      "labview": true,
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "LabVIEW runtime and development packages from the NI feeds."
+    },
+    {
+      "name": "VI Analyzer support",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-viawin-labview-support"
+        ],
+        "linux": [
+          "ni-vialin-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "NI VI Analyzer support package used by the analyzer runners."
+    },
+    {
+      "name": "NI Unit Test Framework",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-utf-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI UTF support package used by the Windows unit-test runner."
+    },
+    {
+      "name": "JKI Dragon",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "jki-dragon"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "JKI Dragon dependency-management tooling installed from the LabVIEW 2026 NI Package Manager feed."
+    },
+    {
+      "name": "VI Package Manager",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-vipm"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI-published Windows VIPM package that enables VIPC application during worker builds. Linux installs VIPM from the native Debian package during its worker build."
+    }
+  ],
+  "dragon": {
+    "available": false,
+    "column": "winExp",
+    "ready": false,
+    "health": "",
+    "manifest_version": "",
+    "files": [],
+    "install_set": [],
+    "conflicts": []
+  },
+  "system": [],
+  "columns": [
+    {
+      "key": "windows",
+      "label": "Windows",
+      "platform": "windows",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": false,
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": false,
+      "nipkg_packages": [],
+      "labview_version": "",
+      "version": "latest"
+    },
+    {
+      "key": "linux",
+      "label": "Linux",
+      "platform": "linux",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": false,
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": false,
+      "nipkg_packages": [],
+      "labview_version": "",
+      "version": "latest"
+    }
+  ]
+}
